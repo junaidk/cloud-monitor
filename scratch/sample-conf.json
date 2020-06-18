@@ -1,0 +1,19 @@
+{
+  "azure":{
+    "client_id":"",
+    "client_secret":"",
+    "tenant_id":"",
+    "subscription_id":""
+  },
+  "do":{
+    "access_token":""
+  },
+  "gcp":{
+    "credential_file":""
+  },
+  "aws":{
+    "access_key":"",
+    "access_secret":""
+  }
+}
+
