@@ -14,5 +14,6 @@ require (
 	github.com/spf13/viper v1.7.0
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
 	google.golang.org/api v0.26.0
+	gopkg.in/resty.v1 v1.12.0
 	gopkg.in/validator.v2 v2.0.0-20200605151824-2b28d334fa05 // indirect
 )

@@ -36,6 +36,11 @@ type Config struct {
 	DO    DOConfig    `mapstructure:"do"`
 	GCP   GCPConfig   `mapstructure:"gcp"`
 	AWS   AWSConfig   `mapstructure:"aws"`
+	IBM   IBMConfig   `mapstructure:"ibm"`
+}
+
+type IBMConfig struct {
+	APIKey string `mapstructure:"api_key"`
 }
 
 type AzureConfig struct {

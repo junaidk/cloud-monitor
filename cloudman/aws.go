@@ -97,7 +97,8 @@ func (c *AWSCloud) GetInstanceList(region string) ([]InstanceListResponse, error
 		if aerr, ok := err.(awserr.Error); ok {
 			switch aerr.Code() {
 			default:
-				log.Println(aerr.Error())
+				// TODO enable this with logging levels
+				//log.Println(aerr.Error())
 			}
 		} else {
 			// Print the error, cast err to awserr.Error to get the Code and

@@ -20,7 +20,10 @@ func PrintTable(data []cloudman.InstanceListResponse, cloud string) {
 	var out [][]string
 	for _, item := range data {
 
-		if strings.ToLower(item.Status) == "running" || strings.ToLower(item.Status) == "succeeded" || strings.ToLower(item.Status) == "active" {
+		if strings.ToLower(item.Status) == "running" ||
+			strings.ToLower(item.Status) == "succeeded" ||
+			strings.ToLower(item.Status) == "active" ||
+			strings.ToLower(item.Status) == "normal" {
 			running += 1
 		}
 		row := []string{

@@ -62,5 +62,14 @@ func NewDriver() (*Driver, error) {
 		d.CloudList = append(d.CloudList, do)
 	}
 
+	// IBM
+	if len(conf.IBM.APIKey) > 0 {
+		ibmCreds := cloudman.IBMCredentials{
+			APIKey: conf.IBM.APIKey,
+		}
+		do := cloudman.NewIBMCloud(ibmCreds)
+		d.CloudList = append(d.CloudList, do)
+	}
+
 	return d, nil
 }

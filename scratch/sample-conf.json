@@ -5,15 +5,18 @@
     "tenant_id":"",
     "subscription_id":""
   },
-  "do":{
-    "access_token":""
+  "do": {
+    "access_token": ""
   },
-  "gcp":{
-    "credential_file":""
+  "gcp": {
+    "credential_file": ""
   },
-  "aws":{
-    "access_key":"",
-    "access_secret":""
+  "aws": {
+    "access_key": "",
+    "access_secret": ""
+  },
+  "ibm": {
+    "api_key": ""
   }
 }
 
